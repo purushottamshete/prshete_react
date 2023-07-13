@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
 import {services} from '../../constants';
+import Service from './service';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -17,33 +18,17 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const Services = () => {
     const [open, setOpen] = React.useState(false);
-    const [service, setService] = React.useState('');
+    const [service, setService] = React.useState(() => ({}));
 
     const handleClickOpen = (val) => {
         setOpen(true);
-        setService(val);
+        setService(() => (val));
     };
 
     const handleClose = () => {
         setOpen(false);
-        setService('');
+        setService(() => ({}));
     };
-
-    const displayService = () => {
-        if ( service === 'Web Development'){
-                return <h1> web Service</h1>;
-        } else if ( service === 'Mobile Development'){
-                return <h1> Mobile Development Service</h1>;
-        } else if ( service === 'server'){
-                return <h1> web Service</h1>;
-        } else if ( service=== 'device'){
-                return <h1> web Service</h1>;
-        } else if ( service=== 'teach'){
-                return <h1> web Service</h1>;
-        } else if ( service === 'business'){
-                return <h1> web Service</h1>;
-        }
-    }
 
     return (
         <Box sx={{ bgcolor: 'white',  minHeight: '500px', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
@@ -91,14 +76,15 @@ const Services = () => {
 
                 <Grid container spacing={2} justifyContent="center">
                     { services.map((serv) => (
-                        <Grid lg={4} xs={12}>
-                            <ServiceButton 
-                                icon={serv.icon}
-                                title={serv.title}
-                                body={serv.button_text}
-                                open={open}
-                                onClick={() => handleClickOpen(serv.title)}
-                            />
+                        <Grid item xs={12} lg={4}>
+
+                                <ServiceButton 
+                                    icon={serv.icon}
+                                    title={serv.title}
+                                    body={serv.button_text}
+                                    open={open}
+                                    onClick={() => handleClickOpen(serv)}
+                                />
                         </Grid>
                     ))}   
                         
@@ -123,7 +109,7 @@ const Services = () => {
                         <CloseIcon />
                         </IconButton>
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-                        {service}
+                        {service.title}
                         </Typography>
                         <Button autoFocus color="inherit" onClick={handleClose}>
                         Close
@@ -131,7 +117,11 @@ const Services = () => {
                     </Toolbar>
                 </AppBar>
                 <Container maxWidth="lg">
-                    { displayService() }
+                    <Service 
+                        title={service.title} 
+                        icon={service.icon}
+                        text={service.modal_text}
+                    />
                 </Container>
             </Dialog>
         </Box>
