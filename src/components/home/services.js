@@ -70,7 +70,7 @@ const Services = () => {
                                     mb: 2,
                                 }}
                             >
-                                This is some text we want to add about the services we provide, and some minor details about it
+                                Professional software services delivering tailored solutions to meet your business needs.
                     </Typography>
                 </Stack>
 

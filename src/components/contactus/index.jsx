@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container } from '@mui/material';
+import EmailContactForm from './email_contact_form';
 
 const ContactUs = () => {
     return (
         <>
-        <Container maxWidth="lg">
-            <h1>Contact Us Page</h1>
-            <p>This is the content of the Contact Us page.</p>
+        <Container maxWidth="lg" sx={{justifyContent: 'center'}}>
+            <h1>Contact Us</h1>
+            <p>Send me your details</p>
+            <EmailContactForm />
         </Container>
         </>
     );
