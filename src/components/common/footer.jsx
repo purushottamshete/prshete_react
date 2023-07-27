@@ -7,6 +7,7 @@ import { Instagram, Twitter } from "@mui/icons-material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Box } from "@mui/material";
+import {pages} from '../../constants';
 
 export default function Footer() {
   return (
@@ -23,22 +24,13 @@ export default function Footer() {
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item container xs={12} sm={4} direction="column">
-            <Link href="/startups" color="inherit" underline="none" variant="h6" >
-                Startups
-            </Link>
-            <Link href="/services" color="inherit" underline="none" variant="h6" >
-                Services
-            </Link>
-            <Link href="/learn" color="inherit" underline="none" variant="h6" >
-                Learn
-            </Link>
-            <Link href="/aboutus" color="inherit" underline="none" variant="h6" >
-                AboutUs
-            </Link>
-            <Link href="/contactus" color="inherit" underline="none" variant="h6" >
-                ContactUs
-            </Link>
-
+            { Object.keys(pages).map((page) => (
+                
+                <Link href={pages[page]} color="inherit" underline="none" variant="h6" key={page}>
+                  {page}
+                </Link>
+              
+              ))}
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" color="text.primary" gutterBottom>
