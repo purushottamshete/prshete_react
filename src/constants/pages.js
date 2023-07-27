@@ -3,8 +3,8 @@ const pages = {
     'Startups': 'startups', 
     'Services': 'services', 
     'Learn': 'learn', 
-    'AboutUs': 'aboutus', 
-    'ContactUs': 'contactus'
+    'About': 'about', 
+    'Contact': 'contact'
 };
 
 export default pages;
