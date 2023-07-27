@@ -1,66 +1,61 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
+import { useForm } from 'react-hook-form';
 
 const EmailContactForm = () => {
-    const form = useRef();
-    const [name, setName] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [message, setMessage] = React.useState('');
+    
 
-
-    const sendEmail = () => {
-        alert('Sending email');
+    const {register, handleSubmit, formState: { errors }} = useForm()
+    const onSubmit = (data) => {
+        console.log(data);
     }
-
+    
     return (
         
         <Box
             component="form"
-            noValidate
             autoComplete="off"
-            ref={form}
-            onSubmit={sendEmail}
+            noValidate
+            onSubmit={handleSubmit(onSubmit)}
             sx={{mb: 3}}
             >
-            <FormControl fullWidth sx={{ m: 1 }}>
+            <FormControl fullWidth sx={{ mb: 1, mt: 1 }}>
                 <TextField
                     id="outlined-name"
                     label="Name"
                     required
-                    value={name}
-                    onChange={(event) => {
-                        setName(event.target.value);
-                    }}
+                    {...register("name", {required: 'This field is required'})}
+                    error={!!errors.name}
+                    helperText={errors.name?.message}
                 />
             </FormControl>
-            <FormControl fullWidth sx={{ m: 1 }}>
+            <FormControl fullWidth sx={{ mb: 1, mt: 1 }}>
                 <TextField
                     id="outlined-email"
                     label="Email"
                     required
-                    value={email}
-                    onChange={(event) => {
-                        setEmail(event.target.value);
-                    }}
+                    {...register("email", {required: 'This field is required', pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address"
+                      }})}
+                    error={!!errors.email}
+                    helperText={errors.email?.message}
                 />
             </FormControl>
-            <FormControl fullWidth sx={{ m: 1 }}>
+            <FormControl fullWidth sx={{ mb: 1, mt: 1 }}>
                 <TextField
                     id="outlined-message"
                     label="Message"
-                    value={message}
                     required
-                    multiline
-                    rows={4}
-                    onChange={(event) => {
-                        setMessage(event.target.value);
-                    }}
+                    {...register("message", {required: 'This field is required'})}
+                    error={!!errors.message}
+                    helperText={errors.message?.message}
                 />
             </FormControl>
-            <FormControl fullWidth sx={{ m: 1 }}>
+            <FormControl fullWidth sx={{ mb: 1, mt: 1 }}>
                 <Button variant="contained" type="submit" value="Send">Send</Button>
             </FormControl>
         </Box>
