@@ -36,9 +36,7 @@ const EmailContactForm = () => {
                     resolve();
                 }, 5000);
             });
-
-            
-            
+    //
     }
 
     return (
