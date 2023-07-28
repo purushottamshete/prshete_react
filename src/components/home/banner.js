@@ -9,10 +9,10 @@ const Banner = () => {
         <Box sx={{ bgcolor: 'grey.100',  height: '700px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} justifyContent="center">
-                        <Grid lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             <Avatar alt="Purushottam Shete" src={puru} sx={{width: 400, height: 400, border: 15, borderColor: 'white', justifyContent: 'center', alignItems: 'center' }}/>
                         </Grid>
-                        <Grid lg={6} sx={{alignItems: 'center', justifyContent: 'center', mt: 2}}>
+                        <Grid item lg={6} sx={{alignItems: 'center', justifyContent: 'center', mt: 2}}>
                             <br/>
                             <Typography
                                 variant="span"

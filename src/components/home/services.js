@@ -76,7 +76,7 @@ const Services = () => {
 
                 <Grid container spacing={2} justifyContent="center">
                     { services.map((serv) => (
-                        <Grid item xs={12} lg={4}>
+                        <Grid item xs={12} lg={4} key={serv.title}>
 
                                 <ServiceButton 
                                     icon={serv.icon}
