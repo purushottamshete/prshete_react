@@ -1,18 +1,46 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
-import Button from '@mui/material/Button';
+import {Alert} from '@mui/material';
+import LoadingButton from '@mui/lab/LoadingButton';
 import { useForm } from 'react-hook-form';
+import emailjs from "emailjs-com";
 
 const EmailContactForm = () => {
     
+    const [alert, setAlert] = useState(false);
+    const { register, handleSubmit, reset, formState} = useForm()
+    const { errors, isSubmitting } = formState;
+    const onSubmit = (formData) => {
 
-    const {register, handleSubmit, formState: { errors }} = useForm()
-    const onSubmit = (data) => {
-        console.log(data);
+        emailjs
+            .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, formData, process.env.REACT_APP_EMAILJS_USER_ID)
+            .then(
+                (result) => {
+                    setAlert({
+                        severity: 'success',
+                        message: 'The message sent successfully, Thanks for contacting'
+                    });
+                    reset();
+                },
+                (error) => {
+                    setAlert({
+                        severity: 'error',
+                        message: 'Error sending message: ' + error.text
+                    });
+                }
+            );
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve();
+                }, 5000);
+            });
+
+            
+            
     }
-    
+
     return (
         
         <Box
@@ -22,6 +50,15 @@ const EmailContactForm = () => {
             onSubmit={handleSubmit(onSubmit)}
             sx={{mb: 3}}
             >
+            {   alert ? 
+                <Alert
+                    severity={alert.severity}
+                    sx={{ mb: 1, mt: 1 }}
+                >
+                    {alert.message}
+                </Alert> :
+                <></>
+            }
             <FormControl fullWidth sx={{ mb: 1, mt: 1 }}>
                 <TextField
                     id="outlined-name"
@@ -50,13 +87,22 @@ const EmailContactForm = () => {
                     id="outlined-message"
                     label="Message"
                     required
+                    multiline
+                    rows={4}
                     {...register("message", {required: 'This field is required'})}
                     error={!!errors.message}
                     helperText={errors.message?.message}
+                    
                 />
             </FormControl>
             <FormControl fullWidth sx={{ mb: 1, mt: 1 }}>
-                <Button variant="contained" type="submit" value="Send">Send</Button>
+                <LoadingButton 
+                    variant="contained" 
+                    type="submit" 
+                    value="Send"
+                    loading={isSubmitting}
+                >
+                Send</LoadingButton>
             </FormControl>
         </Box>
         
