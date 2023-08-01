@@ -10,7 +10,26 @@ const Banner = () => {
             <Container maxWidth="lg">
                 <Grid container spacing={2} justifyContent="center">
                         <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Avatar alt="Purushottam Shete" src={puru} sx={{width: 400, height: 400, border: 15, borderColor: 'white', justifyContent: 'center', alignItems: 'center' }}/>
+                            <Avatar alt="Purushottam Shete" src={puru} 
+                                    sx={{
+                                            width: {
+                                                lg: 400,
+                                                xs: 300,
+                                            },
+                                            height: {
+                                                lg: 400,
+                                                xs: 300,
+                                            }, 
+                                            border: {
+                                                lg: 15, 
+                                                xs: 10,
+                                            },
+                                            borderColor: {
+                                                lg: 'white',
+                                                xs: 'white',
+                                            }, 
+                                            justifyContent: 'center', 
+                                            alignItems: 'center' }}/>
                         </Grid>
                         <Grid item lg={6} sx={{alignItems: 'center', justifyContent: 'center', mt: 2}}>
                             <br/>

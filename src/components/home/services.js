@@ -38,10 +38,13 @@ const Services = () => {
                                 variant="h2"
                                 sx={{
                                     fontFamily: 'Poppins,sans-serif',
-                                    fontWeight: 700,
+                                    fontWeight: {
+                                        lg: 700,
+                                        xs: 300
+                                    },
                                     fontSize: {
                                         lg: 60,
-                                        xs: 40
+                                        xs: 35
                                     },
                                     color: 'inherit',
                                     textDecoration: 'none',
@@ -55,7 +58,10 @@ const Services = () => {
                                 variant="p"
                                 sx={{
                                     fontFamily: 'Montserrat,sans-serif',
-                                    fontWeight: 300,
+                                    fontWeight: {
+                                        lg: 300,
+                                        xs: 150
+                                    },
                                     fontSize: {
                                         lg: 18,
                                         xs: 12
@@ -74,7 +80,7 @@ const Services = () => {
                     </Typography>
                 </Stack>
 
-                <Grid container spacing={2} justifyContent="center">
+                <Grid container spacing={2} justifyContent="center" display='flex'>
                     { services.map((serv) => (
                         <Grid item xs={12} lg={4} key={serv.title}>
 
