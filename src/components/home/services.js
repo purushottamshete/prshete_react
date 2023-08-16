@@ -31,7 +31,7 @@ const Services = () => {
     };
 
     return (
-        <Box sx={{ bgcolor: 'white',  minHeight: '500px', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
+        <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
             <Container maxWidth="lg">
                 <Stack sx ={{alignItems: 'center', justifyContent: 'center', mb: 2}}>
                     <Typography
@@ -40,11 +40,11 @@ const Services = () => {
                                     fontFamily: 'Poppins,sans-serif',
                                     fontWeight: {
                                         lg: 700,
-                                        xs: 300
+                                        xs: 700
                                     },
                                     fontSize: {
-                                        lg: 60,
-                                        xs: 35
+                                        lg: 50,
+                                        xs: 30
                                     },
                                     color: 'inherit',
                                     textDecoration: 'none',
@@ -60,11 +60,11 @@ const Services = () => {
                                     fontFamily: 'Montserrat,sans-serif',
                                     fontWeight: {
                                         lg: 300,
-                                        xs: 150
+                                        xs: 300
                                     },
                                     fontSize: {
-                                        lg: 18,
-                                        xs: 12
+                                        lg: 20,
+                                        xs: 15
                                     },
                                     color: 'inherit',
                                     textDecoration: 'none',
