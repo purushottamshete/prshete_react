@@ -48,7 +48,7 @@ const YouTubeEmbeded = () => (
                                     mb: 2,
                                 }}
                             >
-                                Learning Python it will open up wide range of career prospects for you.
+                                Learning Python will open up wide range of career prospects for you.
                 </Typography>
                 
                 <CardMedia 
