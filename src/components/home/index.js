@@ -1,14 +1,14 @@
 import React from 'react';
 import Banner from './banner'
 import Services from './services';
-import YouTubeEmbeded from './YoutubeEmbed';
+import Courses from '../learn/courses';
 
 const Home = () => {
     return (
         <>
             <Banner />
             <Services />
-            <YouTubeEmbeded />
+            <Courses />
         </>
     );
 }

@@ -1,10 +1,19 @@
 import React from 'react';
-import { Container, Typography, Box} from '@mui/material';
 import EmailContactForm from './email_contact_form';
+import { Box, Container, Typography, Breadcrumbs, Link } from '@mui/material';
 
 const ContactUs = () => {
     return (
         <>
+        <Container maxWidth="lg" justifyContent="left" alignItems="left">
+            <Breadcrumbs aria-label="breadcrumb">
+                <Link underline="hover" color="inherit" href="/">
+                    Home
+                </Link>
+            
+                <Typography color="text.primary">Contact</Typography>
+            </Breadcrumbs>
+        </Container>
         <Box sx={{ bgcolor: 'grey.100',  height: '600px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg" sx={{justifyContent: 'center'}}>
                 <Typography

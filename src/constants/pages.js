@@ -1,9 +1,9 @@
 const pages = {
     'Home' : '/',
-    'Startups': 'startups', 
-    'Services': 'services', 
+    //'Startups': 'startups', 
+    //'Services': 'services', 
     'Learn': 'learn', 
-    'About': 'about', 
+    //'About': 'about', 
     'Contact': 'contact'
 };
 
