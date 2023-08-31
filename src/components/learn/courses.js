@@ -7,8 +7,8 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 const Courses = () => (
     <>
     
-    <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', mt: 2, mb: 10}} >
-        <Container maxWidth="lg" justifyContent="center" alignItems="center">
+    <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', mt: 5, mb: 10}} >
+        <Container maxWidth="lg">
                 <Stack sx ={{alignItems: 'center', justifyContent: 'center', mb: 2}}>
                     <Typography
                                 variant="h2"
@@ -66,9 +66,9 @@ const Courses = () => (
                     </Typography>
                 </Stack>
 
-                <Grid container direction="row">
+                <Grid container direction="row" spacing={2}>
                     { COURSES.map((crs) => (
-                        <Grid item xs={12} lg={4} key={crs.title} justifyContent="center" alignItems="center">
+                        <Grid item xs={12} lg={4} key={crs.title}>
                                 <Course 
                                     title={crs.title}
                                     image={crs.image}
@@ -77,9 +77,7 @@ const Courses = () => (
                                     url={crs.url}
                                 />
                         </Grid>
-                    ))}   
-                        
-                        
+                    ))}        
                 </Grid>
         </Container>
     </Box>

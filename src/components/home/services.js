@@ -80,7 +80,7 @@ const Services = () => {
                     </Typography>
                 </Stack>
 
-                <Grid container spacing={2} justifyContent="center" display='flex'>
+                <Grid container spacing={2} direction="row">
                     { services.map((serv) => (
                         <Grid item xs={12} lg={4} key={serv.title}>
 

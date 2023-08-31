@@ -11,7 +11,10 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 
 const Course = ({title, description, image, hours, url }) => (
     <>
-    <Card sx={{ maxWidth: 300, mb: 2 }}>
+    <Card sx={{ maxWidth: 
+                {
+                  lg: 300
+                }, mb: 3 }}>
       <CardMedia
         component="img"
         image={image}

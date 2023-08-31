@@ -5,7 +5,7 @@ import { Box, Container, Typography, Breadcrumbs, Link } from '@mui/material';
 const ContactUs = () => {
     return (
         <>
-        <Container maxWidth="lg" justifyContent="left" alignItems="left">
+        <Container maxWidth="lg">
             <Breadcrumbs aria-label="breadcrumb">
                 <Link underline="hover" color="inherit" href="/">
                     Home
@@ -15,7 +15,7 @@ const ContactUs = () => {
             </Breadcrumbs>
         </Container>
         <Box sx={{ bgcolor: 'grey.100',  height: '600px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
-            <Container maxWidth="lg" sx={{justifyContent: 'center'}}>
+            <Container maxWidth="lg">
                 <Typography
                     variant="h1"
                     sx={{

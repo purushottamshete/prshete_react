@@ -8,7 +8,7 @@ const CourseDetailPrice = ({price, join}) => {
 
     return (
         <>                                     
-        <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
+        <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 5}}>
         <Container maxWidth="lg">
             <Stack sx ={{alignItems: 'center', justifyContent: 'center', mb: 2}}>
                 <Typography

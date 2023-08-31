@@ -12,9 +12,9 @@ const CourseDetailContent = ({content}) => {
     return (
         <>                                     
 
-        <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
+        <Box sx={{ bgcolor: 'white',  minHeight: '500', my: 5}}>
         <Container maxWidth="lg">
-            <Stack sx ={{alignItems: 'center', justifyContent: 'center', mb: 2}}>
+            <Stack sx ={{alignItems: 'center', mb: 2}}>
                 <Typography
                             variant="h2"
                             sx={{
@@ -35,21 +35,19 @@ const CourseDetailContent = ({content}) => {
                         >
                             Course Content
                 </Typography>
-                <TableContainer component={Paper} sx={{ width: 500, alignItems: 'center', justifyContent: 'center' }}>
+                <TableContainer component={Paper} sx={{ width: {
+                    lg: 500
+                    }, justifyContent: 'center' }}>
                     <Table  aria-label="simple table">
                     
                         <TableBody>
-                        {content.map((row) => (
-                            <TableRow
-                            key={row.name}
-                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                            >
-                            <TableCell component="th" scope="row">
-                                {row}
-                            </TableCell>
-                            
-                            </TableRow>
-                        ))}
+                            {content.map((row, i) => (
+                                <TableRow key={i}>
+                                    <TableCell component="td" scope="row">
+                                        {row}
+                                    </TableCell>
+                                </TableRow>
+                            ))}
                         </TableBody>
                     </Table>
                 </TableContainer>

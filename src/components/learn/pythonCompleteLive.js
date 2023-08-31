@@ -7,7 +7,7 @@ const COURSE = COURSES[2]
 const PythonCompleteLive = () => {
     return (
         <>
-            <Container maxWidth="lg" justifyContent="left" alignItems="left">
+            <Container maxWidth="lg">
                 <Breadcrumbs aria-label="breadcrumb">
                     <Link underline="hover" color="inherit" href="/">
                         Home

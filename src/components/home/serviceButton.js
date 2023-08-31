@@ -111,7 +111,9 @@ const ServiceButton = (props) => {
     return (
         <Button variant="text" 
             sx={{
-                width: '95%', 
+                width: {
+                    lg: '95%'
+                }, 
                 color: 'gray', 
                 boxShadow: 1, 
                 bgcolor: '#f6f6f6',

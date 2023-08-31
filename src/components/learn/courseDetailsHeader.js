@@ -14,7 +14,7 @@ const CourseDetailHeader = ({title, description, video, hours}) => {
 
     return (
         <>
-        <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
+        <Box sx={{ bgcolor: 'white',  minHeight: '500', display: { xs: 'none', md: 'flex'}, my: 5}}>
             <Container maxWidth="lg">
                 <Typography
                                 variant="h1"
@@ -107,7 +107,103 @@ const CourseDetailHeader = ({title, description, video, hours}) => {
                         </Box>   
                     </Card>
             </Container>
-        </Box>                                            
+        </Box>
+
+        <Box sx={{ bgcolor: 'white',  minHeight: '500', display: { xs: 'flex', md: 'none'}, my: 5}}>
+            <Container maxWidth="lg">
+                <Typography
+                                variant="h1"
+                                sx={{
+                                    fontFamily: 'Poppins,sans-serif',
+                                    fontWeight: {
+                                        lg: 600,
+                                        xs: 600
+                                    },
+                                    fontSize: {
+                                        lg: 30,
+                                        xs: 25
+                                    },
+                                    color: 'inherit',
+                                    textDecoration: 'none',
+                                    textShadow: 2,
+                                    mb: 1
+                                }}
+                            >
+                                {title}
+                    </Typography>
+
+                    <CardMedia
+                        src={video}
+                        sx={{
+                            height: {
+                                lg: 300,
+                                xs: 250,
+                            },
+                            width: {
+                                lg: 500,
+                            },
+                            border: 0,
+                            mb: 2
+                        }}
+                        component="iframe" 
+                        alt="Live from space album cover"
+                    />
+
+                    
+                            
+                    <Typography
+                        variant="h1"
+                        sx={{
+                            fontFamily: 'Poppins,sans-serif',
+                            fontWeight: {
+                                lg: 600,
+                                xs: 600
+                            },
+                            fontSize: {
+                                lg: 20,
+                                xs: 20
+                            },
+                            color: 'inherit',
+                            textDecoration: 'none',
+                            textShadow: 2,
+                            mb: 2
+                        }}
+                    >
+                                    Course Description:
+                    </Typography>
+                    <Typography variant="p" color="text.secondary" component="p" sx={{ mb: 2}}>
+                        {description}
+                    </Typography>
+                            
+                            
+                    <Box sx={{ display: 'flex', justifyContent: 'center', pl: 1, pb: 1 }}>
+                        <Stack direction="row" spacing={1}>
+                            <Chip
+                                label={`${hours} Hours`}
+                                icon={<AccessTimeIcon />}
+                                variant="outlined"
+                                clickable={false}
+                            />
+                            <Chip
+                                label="Beginner Friendly"
+                                icon={<CheckCircleOutlineIcon />}
+                                variant="outlined"
+                                clickable={false}
+                            />
+                            <Chip
+                                label="Handson"
+                                icon={<LaptopIcon />}
+                                variant="outlined"
+                                clickable={false}
+                            />
+                            
+                        </Stack>
+                    </Box>
+                            
+                    
+                    
+            </Container>
+        </Box>                                               
 
         </>
     );

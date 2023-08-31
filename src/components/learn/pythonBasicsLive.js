@@ -7,7 +7,7 @@ const COURSE = COURSES[0]
 const PythonBasicsLive = () => {
     return (
         <>
-            <Container maxWidth="lg" justifyContent="left" alignItems="left">
+            <Container maxWidth="lg">
                 <Breadcrumbs aria-label="breadcrumb">
                     <Link underline="hover" color="inherit" href="/">
                         Home
