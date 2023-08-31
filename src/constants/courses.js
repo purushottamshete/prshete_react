@@ -5,7 +5,7 @@ const COURSES = [
         'title' : 'Python Foundation - Live',
         'hours' : '15+',
         'image' : pyBasic,
-        'description' : 'Python foundation course first step to you career in Web development, AI/ML and Devops.',
+        'description' : 'Python foundation course first step to your career in Web development, AI/ML and Devops.',
         'video': 'https://www.youtube.com/embed/Lop3KwJ5DZ0',
         'content': [
             '01. Overview',
