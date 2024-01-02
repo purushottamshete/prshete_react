@@ -2,7 +2,6 @@ import React from 'react';
 import Container from "@mui/material/Container";
 import { Avatar, Box, Grid, Typography } from '@mui/material';
 import { puru } from '../../constants';
-import { TypeAnimation } from 'react-type-animation';
 import Button from '@mui/material/Button';
 import { GitHub, Twitter } from "@mui/icons-material";
 
