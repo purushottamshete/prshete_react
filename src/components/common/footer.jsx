@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
-import { Instagram, Twitter } from "@mui/icons-material";
+import { GitHub, Twitter } from "@mui/icons-material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Box } from "@mui/material";
@@ -51,34 +51,36 @@ export default function Footer() {
               Follow Us
             </Typography>
             <Link 
-              href="https://www.linkedin.com/in/prshete" 
-              color="inherit"
-              rel="noopener"
-              target="_blank"
-              >
-              <LinkedInIcon />
-            </Link>
-            <Link
-              href="https://www.instagram.com/purushottam.shete"
-              color="inherit"
-              sx={{ pl: 1, pr: 1 }}
-              rel="noopener"
-              target="_blank"
-            >
-              <Instagram />
-            </Link>
-            <Link 
               href="https://twitter.com/purushottamshet" 
               color="inherit"
-              sx={{ pr: 1 }}
               rel="noopener"
               target="_blank"
               >
               <Twitter />
             </Link>
+            <Link
+              href="https://github.com/purushottamshete"
+              color="inherit"
+              sx={{pl: 1 }}
+              rel="noopener"
+              target="_blank"
+            >
+              <GitHub />
+            </Link>
+            <Link 
+              href="https://www.linkedin.com/in/prshete" 
+              color="inherit"
+              sx={{pl: 1 }}
+              rel="noopener"
+              target="_blank"
+              >
+              <LinkedInIcon />
+            </Link>
+           
             <Link 
               href="https://wa.me/+919619911039" 
               color="inherit"
+              sx={{pl: 1 }}
               rel="noopener"
               target="_blank"
               >

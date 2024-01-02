@@ -10,6 +10,7 @@ import Learn from './components/learn';
 import PythonBasicsLive from './components/learn/pythonBasicsLive';
 import PythonAdvanceLive from './components/learn/pythonAdvanceLive';
 import PythonCompleteLive from './components/learn/pythonCompleteLive';
+import Project from './components/projects';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="learn-python-complete-live" element={<PythonCompleteLive/>} />
             {/* <Route path="about" element={<AboutUs/>} /> */}
             <Route path="contact" element={<ContactUs/>} />
+            <Route path="projects" element={<Project/>} />
             <Route path="*" element={<NoPage />} />
           </Route>
       </Routes>

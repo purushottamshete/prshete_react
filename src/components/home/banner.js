@@ -3,6 +3,8 @@ import Container from "@mui/material/Container";
 import { Avatar, Box, Grid, Typography } from '@mui/material';
 import { puru } from '../../constants';
 import { TypeAnimation } from 'react-type-animation';
+import Button from '@mui/material/Button';
+import { GitHub, Twitter } from "@mui/icons-material";
 
 const Banner = () => {
     return (
@@ -31,23 +33,9 @@ const Banner = () => {
                                             justifyContent: 'center', 
                                             alignItems: 'center' }}/>
                         </Grid>
-                        <Grid item lg={6} sx={{alignItems: 'center', justifyContent: 'center', mt: 2}}>
+                        <Grid item lg={6} sx={{textAlign: { md: 'left', xs: 'center' } , alignItems: 'center', justifyContent: 'center', mt: 2, }}>
                             <br/>
-                            <Typography
-                                variant="span"
-                                sx={{
-                                fontFamily: 'Montserrat,sans-serif',
-                                fontWeight: 900,
-                                color: 'inherit',
-                                textDecoration: 'none',
-                                fontSize: {
-                                    lg: 15,
-                                    xs: 10
-                                },
-                                }}
-                            >       
-                                WELCOME TO NEW WORLD!
-                            </Typography>
+                            
                             <Typography
                                 variant="h1"
                                 sx={{
@@ -59,9 +47,25 @@ const Banner = () => {
                                 },
                                 color: 'inherit',
                                 textDecoration: 'none',
+                                marginBottom: 5,
                                 }}
                             >
-                                Hi, I'm Purushottam
+                                Hi,
+                            </Typography>
+                            <Typography
+                                variant="h2"
+                                sx={{
+                                fontFamily: 'Montserrat,sans-serif',
+                                fontWeight: 900,
+                                fontSize: {
+                                    lg: 45,
+                                    xs: 30
+                                },
+                                color: 'inherit',
+                                textDecoration: 'none',
+                                }}
+                            >
+                                I'm Purushottam
                             </Typography>
                             <Typography
                                 variant="h1"
@@ -69,43 +73,51 @@ const Banner = () => {
                                 fontFamily: 'Montserrat,sans-serif',
                                 fontWeight: 900,
                                 fontSize: {
-                                    lg: 50,
-                                    xs: 33,
+                                    lg: 40,
+                                    xs: 23,
                                 },
                                 color: 'orange',
                                 textDecoration: 'none',
                                 }}
                             >
-                                <TypeAnimation
+                                Freelancer Backend Developer
+                                {/* <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed once, initially
-                                    'Software Developer',
+                                    'Freelancer Backend Developer',
                                     1000,
-                                    'Entrepreneur',
-                                    1000,
-                                    'Teacher',
-                                    1000,
+                                    // 'Teacher',
+                                    // 1000,
                                 ]}
                                 speed={50}
                                 //style={{ fontSize: '50px', fontWeight: 900, color: 'orange' }}
                                 repeat={Infinity}
-                                />
+                                /> */}
                             </Typography>
                             <Typography
                                 variant="h3"
                                 sx={{
                                     fontFamily: 'Montserrat,sans-serif',
-                                    fontWeight: 900,
-                                    color: 'inherit',
+                                    fontWeight: 800,
+                                    color: 'gray',
                                     textDecoration: 'none',
+                                    textDecorationColor: 'gray',
                                     fontSize: {
-                                        lg: 54,
-                                        xs: 36
+                                        lg: 45,
+                                        xs: 30
                                     },
                                 }}
                             >
                                 based in India.
                             </Typography>
+                            <Grid item lg={12} sx={{textAlign: { md: 'left', xs: 'center' } , alignItems: 'center', justifyContent: 'center', mt: 2, }}>
+                            <Button variant="outlined" size="small" startIcon={<GitHub />} sx={{ mr: 2}} href='https://github.com/purushottamshete' color="info">
+                                GitHub
+                            </Button>
+                            <Button variant="outlined" size="small" startIcon={<Twitter />} sx={{ mr: 2}} href='https://twitter.com/purushottamshet' color="info">
+                                Twitter
+                            </Button>
+                            </Grid>
                         </Grid>
                 </Grid>
                 
