@@ -1,10 +1,17 @@
 import React from 'react';
 import EmailContactForm from './email_contact_form';
 import { Box, Container, Typography, Breadcrumbs, Link } from '@mui/material';
+import { Helmet } from 'react-helmet';
 
 const ContactUs = () => {
     return (
         <>
+        <Helmet>
+          <title>Prshete.com | Contact </title>
+          <meta name="description" content="Contact Purushottam Shete" />
+          <meta name="keywords" content="Contact Purushottam Shete" />
+          <meta name="author" content="Purushottam Shete" />
+        </Helmet>
         <Container maxWidth="lg">
             <Breadcrumbs aria-label="breadcrumb">
                 <Link underline="hover" color="inherit" href="/">
