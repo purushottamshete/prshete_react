@@ -9,7 +9,7 @@ const PROJECTS = [
         'giturl': "https://github.com/purushottamshete/martech",
         'subtitle' : 'Python API Backend',
         'summary': 'Backend Rest API for Martech', 
-        'description': 'Backend Rest API for a Italy client providing functionality of Authentication (JWT), Role based Autherization and CRUD. Backend is developed using Python3, FastAPI, Posgtres, Docker and Git ', 
+        'description': 'Backend Rest API for a Italy client providing functionality of Authentication (JWT), Role based Authorization and CRUD. Backend is developed using Python3, FastAPI, Posgtres, Docker and Git', 
     },
     {
         'id': 2,
@@ -18,8 +18,8 @@ const PROJECTS = [
         'image' : brickiq,
         'giturl': "https://github.com/purushottamshete/brickiq",
         'subtitle' : 'Python API Backend',
-        'summary': 'Backend Rest API for Realestate Startup', 
-        'description': 'Backend Rest API for a realestate client providing functionality of Authentication, Geospatial Search for Properties, Property trends API. The backend is developed using Python3, FastAPI, MongoDB, Docker and Git'
+        'summary': 'Backend Rest API for Real-estate Start-up', 
+        'description': 'Backend Rest API for a real-estate client providing functionality of Authentication, Geospatial Search for Properties, Property trends API. The backend is developed using Python3, FastAPI, MongoDB, Docker and Git'
     },
     {
         'id': 3,
@@ -28,8 +28,8 @@ const PROJECTS = [
         'image' : mhl,
         'giturl': "https://www.myhomelease.com",
         'subtitle' : 'Online Leave and Lisense',
-        'summary': 'Website for Online Leave and Lisense platform', 
-        'description': 'Website is developed for RRPL client, Website provides leave and lisense price calculator, dynamic SEO funnel creation, plan singup. The website is developed using Python3, Django, Mysql, Git and Digital Ocean   ', 
+        'summary': 'Website for Online Leave and License platform', 
+        'description': 'Website is developed for RRPL client, Website provides leave and license price calculator, dynamic SEO funnel creation, plan signup. The website is developed using Python3, Django, Mysql, Git and Digital Ocean', 
     },
 ];
 
