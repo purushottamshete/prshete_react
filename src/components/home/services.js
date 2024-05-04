@@ -52,7 +52,7 @@ const Services = () => {
                                     mb: 2
                                 }}
                             >
-                                My Awesome Services
+                                Our Services
                     </Typography>
                     <Typography
                                 variant="p"

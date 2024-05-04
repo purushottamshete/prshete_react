@@ -7,10 +7,10 @@ const ContactUs = () => {
     return (
         <>
         <Helmet>
-          <title>Prshete.com | Contact </title>
-          <meta name="description" content="Contact Purushottam Shete" />
-          <meta name="keywords" content="Contact Purushottam Shete" />
-          <meta name="author" content="Purushottam Shete" />
+          <title>PRSTech.io | Contact Us </title>
+          <meta name="description" content="Contact Us PRSTech.io" />
+          <meta name="keywords" content="Contact Us PRSTech.io" />
+          <meta name="author" content="PRShete Technologies Pvt. Ltd." />
         </Helmet>
         <Container maxWidth="lg">
             <Breadcrumbs aria-label="breadcrumb">
@@ -38,7 +38,7 @@ const ContactUs = () => {
                     mb: 1,
                     }}
                 >       
-                    Contact Me
+                    Contact Us
                 </Typography>
                 <Typography
                     variant="span"
@@ -54,7 +54,7 @@ const ContactUs = () => {
                     mb: 2,
                     }}
                 >       
-                    Send me your query
+                    Send us your query
                 </Typography>
                 <EmailContactForm />
             </Container>

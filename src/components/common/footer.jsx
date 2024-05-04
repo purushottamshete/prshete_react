@@ -39,12 +39,8 @@ export default function Footer() {
             <Typography variant="body2" color="text.secondary">
               113, Sai Vision, Pimple Saudagar, Pune, India
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Email: contact@prshete.com
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Phone: +91 96199 11039
-            </Typography>
+
+
           </Grid>
           <Grid item xs={12} sm={4} justifyContent='flex-end' >
             <Typography variant="h6" color="text.primary" gutterBottom>
@@ -58,17 +54,8 @@ export default function Footer() {
               >
               <Twitter />
             </Link>
-            <Link
-              href="https://github.com/purushottamshete"
-              color="inherit"
-              sx={{pl: 1 }}
-              rel="noopener"
-              target="_blank"
-            >
-              <GitHub />
-            </Link>
             <Link 
-              href="https://www.linkedin.com/in/prshete" 
+              href="https://www.linkedin.com/company/prstech/" 
               color="inherit"
               sx={{pl: 1 }}
               rel="noopener"
@@ -91,8 +78,8 @@ export default function Footer() {
         <Box mt={5}>
           <Typography variant="body2" color="text.secondary" align="center">
             {"Copyright © "}
-            <Link color="inherit" href="https://prshete.com/">
-              prshete.com
+            <Link color="inherit" href="https://prstech.io/">
+              PRShete Technologies Pvt. Ltd.
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}

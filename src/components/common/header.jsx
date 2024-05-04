@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import { Button, Avatar } from '@mui/material';
-import prs from '../../assets/images/prs.png';
+import prs from '../../assets/images/prstech.png';
 import { Link } from 'react-router-dom';
 import SwipeableTemporaryDrawer from './drawer';
 import {pages} from '../../constants';

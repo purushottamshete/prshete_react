@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from "@mui/material/Container";
 import { Avatar, Box, Grid, Typography } from '@mui/material';
-import { puru } from '../../constants';
+import { py } from '../../constants';
 import Button from '@mui/material/Button';
 import { GitHub, Twitter } from "@mui/icons-material";
 
@@ -11,7 +11,7 @@ const Banner = () => {
             <Container maxWidth="lg">
                 <Grid container spacing={2} justifyContent="center">
                         <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Avatar alt="Purushottam Shete" src={puru} 
+                            <Avatar alt="Python" src={py} 
                                     sx={{
                                             width: {
                                                 lg: 400,
@@ -64,7 +64,7 @@ const Banner = () => {
                                 textDecoration: 'none',
                                 }}
                             >
-                                I'm Purushottam
+                                We Provide...
                             </Typography>
                             <Typography
                                 variant="h1"
@@ -79,7 +79,7 @@ const Banner = () => {
                                 textDecoration: 'none',
                                 }}
                             >
-                                Freelancer Backend Developer
+                                Python Specialised
                                 {/* <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed once, initially
@@ -107,16 +107,9 @@ const Banner = () => {
                                     },
                                 }}
                             >
-                                based in India.
+                                Software Services
                             </Typography>
-                            <Grid item lg={12} sx={{textAlign: { md: 'left', xs: 'center' } , alignItems: 'center', justifyContent: 'center', mt: 2, }}>
-                            <Button variant="outlined" size="small" startIcon={<GitHub />} sx={{ mr: 2}} href='https://github.com/purushottamshete' color="info">
-                                GitHub
-                            </Button>
-                            <Button variant="outlined" size="small" startIcon={<Twitter />} sx={{ mr: 2}} href='https://twitter.com/purushottamshet' color="info">
-                                Twitter
-                            </Button>
-                            </Grid>
+                            
                         </Grid>
                 </Grid>
                 
