@@ -15,11 +15,11 @@ function Header() {
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Link to="/"> 
-            <Avatar alt="Purushottam Shete" src={prs} sx={{width: 40, height: 40, mr: 1,  display: { xs: 'none', md: 'flex' }}}/>
+            <Avatar variant="square" alt="Purushottam Shete" src={prs} sx={{width: 40, height: 40, mr: 1,  display: { xs: 'none', md: 'flex' }}}/>
           </Link>
           
           <Link to="/"> 
-          <Avatar alt="Purushottam Shete" src={prs} sx={{width: 32, height: 32, mr: 1,  display: { xs: 'flex', md: 'None' }}}/>
+          <Avatar variant="square" alt="Purushottam Shete" src={prs} sx={{width: 32, height: 32, mr: 1,  display: { xs: 'flex', md: 'None' }}}/>
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none',  justifyContent: 'flex-end' } }}>
