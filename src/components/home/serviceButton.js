@@ -6,13 +6,17 @@ import StorageIcon from '@mui/icons-material/Storage';
 import DevicesIcon from '@mui/icons-material/Devices';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
+import WebIcon from '@mui/icons-material/Web';
 
 const ServiceButton = (props) => {
 
     function getIcon(){
-        if (props.icon === 'monitor'){
+        if (props.icon === 'web'){
             return (
-                <MonitorIcon 
+                <WebIcon 
                     sx={{
                         fontSize: {
                             lg: 50,
@@ -26,9 +30,9 @@ const ServiceButton = (props) => {
                     }}
                 />
             );
-        }else if (props.icon === 'mobile'){
+        }else if (props.icon === 'devops'){
             return (
-                <AdUnitsIcon 
+                <AllInclusiveIcon 
                     sx={{
                         fontSize: {
                             lg: 50,
@@ -74,9 +78,9 @@ const ServiceButton = (props) => {
                     }}
                 />
             );
-        } else if (props.icon === 'teach'){
+        } else if (props.icon === 'robot'){
             return (
-                <SchoolIcon 
+                <PrecisionManufacturingIcon 
                     sx={{
                         fontSize: {
                             lg: 50,
@@ -93,6 +97,22 @@ const ServiceButton = (props) => {
         } else if (props.icon === 'business'){
             return (
                 <BusinessCenterIcon 
+                    sx={{
+                        fontSize: {
+                            lg: 50,
+                            xs: 50
+                        },
+                        color: '#bc0000',
+                        ":hover": {
+                            color: "inherit",
+                        },
+                        mb:2
+                    }}
+                />
+            );
+        } else if (props.icon === 'ai'){
+            return (
+                <PsychologyIcon 
                     sx={{
                         fontSize: {
                             lg: 50,
