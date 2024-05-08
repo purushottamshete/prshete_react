@@ -90,7 +90,7 @@ const ContactUs = () => {
                     }}
                 >   
                     <b>Corporate</b>: 113, Sai Vision, Pimple Saudagar, Pune, India, 411027<br/>
-                    <b>Registed</b>: Wing A, Rose E Mehar, Rahatani, Pune, India, 411017<br/>
+                    <b>Registered</b>: Wing A, Rose E Mehar, Rahatani, Pune, India, 411017<br/>
                     
                 </Typography>
                 
