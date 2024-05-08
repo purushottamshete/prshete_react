@@ -2,6 +2,7 @@ import React from 'react';
 import EmailContactForm from './email_contact_form';
 import { Box, Container, Typography, Breadcrumbs, Link } from '@mui/material';
 import { Helmet } from 'react-helmet';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const ContactUs = () => {
     return (
@@ -57,6 +58,42 @@ const ContactUs = () => {
                     Send us your query
                 </Typography>
                 <EmailContactForm />
+                <Typography
+                    variant="h1"
+                    sx={{
+                    fontFamily: 'Montserrat,sans-serif',
+                    fontWeight: 900,
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    fontSize: {
+                        lg: 40,
+                        xs: 30
+                    },
+                    mt: 1,
+                    mb: 1,
+                    }}
+                >       
+                    Offices
+                </Typography>
+                <Typography
+                    variant="span"
+                    sx={{
+                    fontFamily: 'Montserrat,sans-serif',
+                    fontWeight: 600,
+                    color: 'gray',
+                    textDecoration: 'none',
+                    fontSize: {
+                        lg: 15,
+                        xs: 10
+                    },
+                    mb: 2,
+                    }}
+                >   
+                    <b>Corporate</b>: 113, Sai Vision, Pimple Saudagar, Pune, India, 411027<br/>
+                    <b>Registed</b>: Wing A, Rose E Mehar, Rahatani, Pune, India, 411017<br/>
+                    
+                </Typography>
+                
             </Container>
         </Box>
         </>
