@@ -22,7 +22,7 @@ const ContactUs = () => {
                 <Typography color="text.primary">Contact</Typography>
             </Breadcrumbs>
         </Container>
-        <Box sx={{ bgcolor: 'grey.100',  height: '600px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
+        <Box sx={{ bgcolor: 'grey.100',  height: '700px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg">
                 <Typography
                     variant="h1"
@@ -89,9 +89,11 @@ const ContactUs = () => {
                     mb: 2,
                     }}
                 >   
-                    <b>Corporate</b>: 113, Sai Vision, Pimple Saudagar, Pune, India, 411027<br/>
-                    <b>Registered</b>: Wing A, Rose E Mehar, Rahatani, Pune, India, 411017<br/>
-                    
+                    <b>(India)</b> <br/>
+                    <b>Corporate</b>: 113, Sai Vision, Pimple Saudagar, Pune, India.<br/>
+                    <b>Registered</b>: Wing A, Rose E Mehar, Rahatani, Pune, India.<br/><br/>
+                    <b>(Europe)</b> <br/>
+                    Hoofdweg, 1058AW, Amsterdam, Noord Holland, The Netherlands.<br/><br/>
                 </Typography>
                 
             </Container>
