@@ -7,7 +7,7 @@ import { GitHub, Twitter } from "@mui/icons-material";
 
 const Banner = () => {
     return (
-        <Box sx={{ bgcolor: 'grey.100',  height: '700px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
+        <Box sx={{ bgcolor: 'grey.100',  height: {lg: '600px', xs: '650px'}, alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} justifyContent="center">
                         <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

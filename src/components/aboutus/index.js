@@ -21,7 +21,7 @@ const AboutUs = () => {
                 <Typography color="text.primary">About</Typography>
             </Breadcrumbs>
         </Container>
-        <Box sx={{ bgcolor: 'grey.100',  height: '600px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
+        <Box sx={{ bgcolor: 'grey.100',  height: { lg: '500px', xs: '650px' }, alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg">
                 <Typography
                     variant="h1"
@@ -47,9 +47,13 @@ const AboutUs = () => {
                     fontWeight: 400,
                     color: 'inherit',
                     textDecoration: 'none',
+                    fontWeight: {
+                        lg: 300,
+                        xs: 300
+                    },
                     fontSize: {
-                        lg: 15,
-                        xs: 10
+                        lg: 20,
+                        xs: 15
                     },
                     mt: 2,
                     mb: 2,
