@@ -22,7 +22,7 @@ export default function Footer() {
         px: 1
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" >
         <Grid container spacing={5}>
           <Grid item container xs={12} sm={4} direction="column">
             { Object.keys(pages).map((page) => (
@@ -43,8 +43,8 @@ export default function Footer() {
 
 
           </Grid>
-          <Grid item xs={12} sm={4} justifyContent='flex-end' >
-            <Typography variant="h6" color="text.primary" gutterBottom>
+          <Grid item xs={12} sm={4} >
+            <Typography variant="h6" color="text.primary" gutterBottom >
               Follow Us
             </Typography>
             <Link 

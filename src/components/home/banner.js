@@ -7,7 +7,7 @@ import { GitHub, Twitter } from "@mui/icons-material";
 
 const Banner = () => {
     return (
-        <Box sx={{ bgcolor: 'grey.100',  height: {lg: '600px', xs: '650px'}, alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
+        <Box sx={{ bgcolor: 'grey.100',  height: {lg: '600px', xs: '650px'}, alignItems: 'center', justifyContent: 'center', display: 'flex',  background: 'linear-gradient(to right bottom, #80D0C7, #0093E9)'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} justifyContent="center">
                         <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -44,27 +44,27 @@ const Banner = () => {
                                     lg: 54,
                                     xs: 36
                                 },
-                                color: 'inherit',
+                                color: 'black',
                                 textDecoration: 'none',
                                 marginBottom: 5,
                                 }}
                             >
-                                Hi,
+                                H!
                             </Typography>
                             <Typography
                                 variant="h2"
                                 sx={{
                                 fontFamily: 'Montserrat,sans-serif',
-                                fontWeight: 900,
+                                fontWeight: 700,
                                 fontSize: {
                                     lg: 45,
                                     xs: 30
                                 },
-                                color: 'inherit',
+                                color: 'black',
                                 textDecoration: 'none',
                                 }}
                             >
-                                We Provide...
+                                We Provide
                             </Typography>
                             <Typography
                                 variant="h1"
@@ -75,7 +75,7 @@ const Banner = () => {
                                     lg: 40,
                                     xs: 23,
                                 },
-                                color: 'orange',
+                                color: 'white',
                                 textDecoration: 'none',
                                 }}
                             >
@@ -97,8 +97,8 @@ const Banner = () => {
                                 variant="h3"
                                 sx={{
                                     fontFamily: 'Montserrat,sans-serif',
-                                    fontWeight: 800,
-                                    color: 'gray',
+                                    fontWeight: 700,
+                                    color: 'black',
                                     textDecoration: 'none',
                                     textDecorationColor: 'gray',
                                     fontSize: {

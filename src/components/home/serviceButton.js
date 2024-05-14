@@ -22,7 +22,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -38,7 +38,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -54,7 +54,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -70,7 +70,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -86,7 +86,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -102,7 +102,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -118,7 +118,7 @@ const ServiceButton = (props) => {
                             lg: 50,
                             xs: 50
                         },
-                        color: '#bc0000',
+                        color: '#0093E9',
                         ":hover": {
                             color: "inherit",
                         },
@@ -141,7 +141,7 @@ const ServiceButton = (props) => {
                 px: 4,
                 borderColor: 'gray',
                 ":hover": {
-                    bgcolor: 'red',
+                    bgcolor: '#80D0C7',
                     color: "white",
                     borderColor: 'red',
                     zIndex: 4,
