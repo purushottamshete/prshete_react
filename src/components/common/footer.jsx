@@ -38,7 +38,11 @@ export default function Footer() {
               Offices
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              <b>(INDIA)</b> 113, Sai Vision, Pimple Saudagar, Pune, MH <br />
+            
+              <Link href={"https://maps.app.goo.gl/norfARchbMpCDvx69"} color="inherit" underline="none">
+              <b>(INDIA)</b> 113, Sai Vision, Pimple Saudagar, Pune, MH 
+              </Link>
+              <br />
               <b>(EUROPE)</b> Hoofdweg, 1058AW, Amsterdam, Noord Holland, The Netherlands. <br />
 
             </Typography>

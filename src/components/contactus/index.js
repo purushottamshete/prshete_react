@@ -90,7 +90,10 @@ const ContactUs = () => {
                     }}
                 >   
                     <b>(India)</b> <br/>
-                    <b>Corporate</b>: 113, Sai Vision, Pimple Saudagar, Pune, India.<br/>
+                    <Link href={"https://maps.app.goo.gl/norfARchbMpCDvx69"} color="inherit">
+                    <b>Corporate</b>: 113, Sai Vision, Pimple Saudagar, Pune, India.
+                    </Link>
+                    <br/>
                     <b>Registered</b>: Wing A, Rose E Mehar, Rahatani, Pune, India.<br/><br/>
                     <b>(Europe)</b> <br/>
                     Hoofdweg, 1058AW, Amsterdam, Noord Holland, The Netherlands.<br/><br/>
