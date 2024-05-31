@@ -35,10 +35,12 @@ export default function Footer() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" color="text.primary" gutterBottom>
-              Contact Us
+              Offices
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              113, Sai Vision, Pimple Saudagar, Pune, India
+              <b>(INDIA)</b> 113, Sai Vision, Pimple Saudagar, Pune, MH <br />
+              <b>(EUROPE)</b> Hoofdweg, 1058AW, Amsterdam, Noord Holland, The Netherlands. <br />
+
             </Typography>
 
 
