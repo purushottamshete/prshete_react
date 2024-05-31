@@ -80,10 +80,10 @@ export default function Footer() {
           <Typography variant="body2" color="text.secondary" align="center">
             {"Copyright © "}
             <Link color="inherit" href="https://prstech.io/">
-              PRShete Technologies Pvt. Ltd.
+              PRSHETE TECHNOLOGIES PVT. LTD.
             </Link>{" "}
             {new Date().getFullYear()}
-            {"."}
+            {" "}
           </Typography>
         </Box>
       </Container>
