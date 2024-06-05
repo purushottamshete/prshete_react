@@ -9,7 +9,7 @@ import mhl from "../assets/images/mhl.png";
 import py from "../assets/images/py.png";
 import outsourcing from "../assets/images/outsourcing.png";
 import augmentation from "../assets/images/augmentation.png";
-import consultancy from "../assets/images/consultancy.jpeg";
+import consultancy from "../assets/images/consultancy.png";
 
 export {
   puru,
