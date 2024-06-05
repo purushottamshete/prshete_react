@@ -1,30 +1,37 @@
 import React from 'react';
 import Container from "@mui/material/Container";
 import { Box, Grid, Typography, Stack } from '@mui/material';
-import ServiceButton from './serviceButton';
+import SpecialityButton from './specialityButton';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
-import {services} from '../../constants';
+import {specialities} from '../../constants';
+import Special from './special';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
-const Services = () => {
+const Speciality = () => {
     const [open, setOpen] = React.useState(false);
-    const [service, setService] = React.useState(() => ({}));
+    const [specilality, setSpecilality] = React.useState(() => ({}));
 
     const handleClickOpen = (val) => {
         setOpen(true);
-        setService(() => (val));
+        setSpecilality(() => (val));
     };
 
     const handleClose = () => {
         setOpen(false);
-        setService(() => ({}));
+        setSpecilality(() => ({}));
     };
 
     return (
-        <Box sx={{ bgcolor: '#f5f5f5',  minHeight: '600', alignItems: 'center', justifyContent: 'center', display: 'flex', py: 10 }}>
+        <Box sx={{ bgcolor: 'white',  minHeight: '500', alignItems: 'center', justifyContent: 'center', display: 'flex', my: 10}}>
             <Container maxWidth="lg">
                 <Stack sx ={{alignItems: 'center', justifyContent: 'center', mb: 2}}>
                     <Typography
@@ -42,12 +49,10 @@ const Services = () => {
                                     color: 'inherit',
                                     textDecoration: 'none',
                                     textShadow: 2,
-                                    alignItems: 'center', 
-                                    justifyContent: 'center',
                                     mb: 2
                                 }}
                             >
-                                How we can collaborate?
+                                Our Services
                     </Typography>
                     <Typography
                                 variant="p"
@@ -71,21 +76,20 @@ const Services = () => {
                                     mb: 2,
                                 }}
                             >
-                                Ways to engage our professional software services.
+                                Professional software services delivering tailored solutions to meet your business needs.
                     </Typography>
                 </Stack>
 
                 <Grid container spacing={2} direction="row">
-                    { services.map((serv) => (
-                        <Grid item xs={12} lg={4} key={serv.title}>
+                    { specialities.map((spl) => (
+                        <Grid item xs={12} lg={4} key={spl.title}>
 
-                                <ServiceButton 
-                                    image={serv.image}
-                                    title={serv.title}
-                                    text={serv.text}
-                                    benifits={serv.benifits}
+                                <SpecialityButton 
+                                    icon={spl.icon}
+                                    title={spl.title}
+                                    body={spl.button_text}
                                     open={open}
-                                    onClick={() => handleClickOpen(serv)}
+                                    onClick={() => handleClickOpen(spl)}
                                 />
                         </Grid>
                     ))}   
@@ -94,9 +98,40 @@ const Services = () => {
                 </Grid>
                 
             </Container>
-            
+            <Dialog
+                fullScreen
+                open={open}
+                onClose={handleClose}
+                TransitionComponent={Transition}
+            >
+                <AppBar sx={{ position: 'relative' }}>
+                    <Toolbar>
+                        <IconButton
+                        edge="start"
+                        color="inherit"
+                        onClick={handleClose}
+                        aria-label="close"
+                        >
+                        <CloseIcon />
+                        </IconButton>
+                        <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                        {specilality.title}
+                        </Typography>
+                        <Button autoFocus color="inherit" onClick={handleClose}>
+                        Close
+                        </Button>
+                    </Toolbar>
+                </AppBar>
+                <Container maxWidth="lg">
+                    <Special 
+                        title={specilality.title} 
+                        icon={specilality.icon}
+                        text={specilality.modal_text}
+                    />
+                </Container>
+            </Dialog>
         </Box>
     );
 }
 
-export default Services;
+export default Speciality;

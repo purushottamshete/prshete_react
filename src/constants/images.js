@@ -7,6 +7,9 @@ import martech from "../assets/images/martech.png";
 import brickiq from "../assets/images/brickiq.png";
 import mhl from "../assets/images/mhl.png";
 import py from "../assets/images/py.png";
+import outsourcing from "../assets/images/outsourcing.png";
+import augmentation from "../assets/images/augmentation.png";
+import consultancy from "../assets/images/consultancy.jpeg";
 
 export {
   puru,
@@ -17,5 +20,8 @@ export {
   martech,
   brickiq,
   mhl,
-  py
+  py,
+  outsourcing,
+  augmentation,
+  consultancy
 };
