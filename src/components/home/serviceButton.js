@@ -41,10 +41,16 @@ const ServiceButton = (props) => {
                     { props.benifits.map((benifit) => (
                         <ListItem>
                         <ListItemIcon>
-                            <CheckIcon color="green"/>
+                            <CheckIcon 
+                            color="green"
+                            sx ={{
+                                color: '#0093E9'
+                            }}
+                            />
                         </ListItemIcon>
                         <ListItemText
                             primary={benifit}
+                            
                         />
                         </ListItem>
                     ))}  
