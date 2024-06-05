@@ -84,12 +84,11 @@ export default function Footer() {
         </Grid>
         <Box mt={5}>
           <Typography variant="body2" color="text.secondary" align="center">
-            {"Copyright © "}
+            {new Date().getFullYear()}
+            {" "}{"© "}
             <Link color="inherit" href="https://prstech.io/">
               PRSHETE TECHNOLOGIES PVT. LTD.
-            </Link>{" "}
-            {new Date().getFullYear()}
-            {" "}
+            </Link>
           </Typography>
         </Box>
       </Container>
