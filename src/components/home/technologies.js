@@ -94,7 +94,7 @@ const Technologies = () => {
                 <Grid container spacing={2} direction="row">
  
                     <Grid item xs={3} lg={1}>
-                        <FaPython size={70}/>
+                        <FaPython size={70} color="#0093E9"/>
                     </Grid>
                     <Grid item xs={3} lg={1}>
                         <DiDjango size={70}/>
