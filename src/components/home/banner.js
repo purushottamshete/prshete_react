@@ -19,7 +19,7 @@ const Banner = () => {
                                 fontWeight: 700,
                                 fontSize: {
                                     lg: 28,
-                                    xs: 17
+                                    xs: 20
                                 },
                                 color: 'black',
                                 textDecoration: 'none',
@@ -35,7 +35,7 @@ const Banner = () => {
                                 fontWeight: 800,
                                 fontSize: {
                                     lg: 50,
-                                    xs: 40,
+                                    xs: 32,
                                 },
                                 color: 'black',
                                 textDecoration: 'none',
@@ -67,7 +67,7 @@ const Banner = () => {
                                     textDecorationColor: 'gray',
                                     fontSize: {
                                         lg: 25,
-                                        xs: 17
+                                        xs: 18
                                     },
                                 }}
                             >
