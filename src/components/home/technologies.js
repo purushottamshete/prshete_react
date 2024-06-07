@@ -36,6 +36,7 @@ import { SiMqtt } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { DiRedis } from "react-icons/di";
 import { SiApachekafka } from "react-icons/si";
+import { SiKubernetes } from "react-icons/si";
 
 const Technologies = () => {
 
@@ -93,110 +94,113 @@ const Technologies = () => {
 
                 <Grid container spacing={2} direction="row">
  
-                    <Grid item xs={3} lg={1}>
-                        <FaPython size={70} color="#0093E9"/>
+                    <Grid item xs={3} lg={1} key={1}>
+                        <FaPython size={60} color="#0093E9"/>
                     </Grid>
-                    <Grid item xs={3} lg={1}>
-                        <DiDjango size={70}/>
+                    <Grid item xs={3} lg={1} key={2}>
+                        <DiDjango size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1}>
-                        <SiFlask size={70}/>
+                    <Grid item xs={3} lg={1} key={3}>
+                        <SiFlask size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiFastapi size={70}/>
+                    <Grid item xs={3} lg={1} key={4} >
+                        <SiFastapi size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <TbBrandJavascript size={70}/>
+                    <Grid item xs={3} lg={1} key={5} >
+                        <TbBrandJavascript size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaReact size={70}/>
+                    <Grid item xs={3} lg={1} key={6} >
+                        <FaReact size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaDocker size={70}/>
+                    <Grid item xs={3} lg={1} key={7} >
+                        <FaDocker size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiMysql size={70}/>
+                    <Grid item xs={3} lg={1} key={8} >
+                        <SiMysql size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <BiLogoPostgresql size={70}/>
+                    <Grid item xs={3} lg={1} key={9} >
+                        <BiLogoPostgresql size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiMongodb size={70}/>
+                    <Grid item xs={3} lg={1} key={10} >
+                        <SiMongodb size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiRos size={70}/>
+                    <Grid item xs={3} lg={1} key={11} >
+                        <SiRos size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiOpencv size={70}/>
+                    <Grid item xs={3} lg={1} key={12} >
+                        <SiOpencv size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaAws size={70}/>
+                    <Grid item xs={3} lg={1} key={13} >
+                        <FaAws size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiMicrosoftazure size={70}/>
+                    <Grid item xs={3} lg={1} key={14} >
+                        <SiMicrosoftazure size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiGooglecloud size={70}/>
+                    <Grid item xs={3} lg={1} key={15} >
+                        <SiGooglecloud size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <IoLogoAndroid size={70}/>
+                    <Grid item xs={3} lg={1} key={16} >
+                        <IoLogoAndroid size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaApple size={70}/>
+                    <Grid item xs={3} lg={1} key={17} >
+                        <FaApple size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <TbBrandReactNative size={70}/>
+                    <Grid item xs={3} lg={1} key={18} >
+                        <TbBrandReactNative size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <TbBrandCpp size={70}/>
+                    <Grid item xs={3} lg={1} key={19} >
+                        <TbBrandCpp size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaGithub size={70}/>
+                    <Grid item xs={3} lg={1} key={20} >
+                        <FaGithub size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiGithubactions size={70}/>
+                    <Grid item xs={3} lg={1} key={21} >
+                        <SiGithubactions size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaJenkins size={70}/>
+                    <Grid item xs={3} lg={1} key={22} >
+                        <FaJenkins size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiAnsible size={70}/>
+                    <Grid item xs={3} lg={1} key={23} >
+                        <SiAnsible size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiTensorflow size={70}/>
+                    <Grid item xs={3} lg={1} key={24} >
+                        <SiKubernetes size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiScikitlearn size={70}/>
+                    <Grid item xs={3} lg={1} key={25} >
+                        <SiTensorflow size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiPytorch size={70}/>
+                    <Grid item xs={3} lg={1} key={26} >
+                        <SiScikitlearn size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiScipy size={70}/>
+                    <Grid item xs={3} lg={1} key={27} >
+                        <SiPytorch size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiNumpy size={70}/>
+                    <Grid item xs={3} lg={1} key={28} >
+                        <SiScipy size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiPandas size={70}/>
+                    <Grid item xs={3} lg={1} key={29} >
+                        <SiNumpy size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <FaRaspberryPi size={70}/>
+                    <Grid item xs={3} lg={1} key={30} >
+                        <SiPandas size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiArduino size={70}/>
+                    <Grid item xs={3} lg={1} key={31} >
+                        <FaRaspberryPi size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiMqtt size={70}/>
+                    <Grid item xs={3} lg={1} key={32} >
+                        <SiArduino size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <GrGraphQl size={70}/>
+                    <Grid item xs={3} lg={1} key={33} >
+                        <SiMqtt size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <DiRedis size={70}/>
+                    <Grid item xs={3} lg={1} key={34} >
+                        <GrGraphQl size={60}/>
                     </Grid>
-                    <Grid item xs={3} lg={1} >
-                        <SiApachekafka size={70}/>
+                    <Grid item xs={3} lg={1} key={35} >
+                        <DiRedis size={60}/>
+                    </Grid>
+                    <Grid item xs={3} lg={1} key={36} >
+                        <SiApachekafka size={60}/>
                     </Grid>
                     
                     

@@ -24,7 +24,12 @@ const ServiceButton = (props) => {
     }
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ 
+            width: {
+                lg: '95%'
+            }, 
+
+        }}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={ getImage() }
