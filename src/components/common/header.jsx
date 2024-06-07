@@ -11,7 +11,7 @@ import {pages} from '../../constants';
 
 function Header() {
   return (
-    <AppBar position="static" color="transparent" sx={{boxShadow: 0}}>
+    <AppBar position="fixed" sx={{ backgroundColor:'white', boxShadow: 0,}}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Link to="/"> 

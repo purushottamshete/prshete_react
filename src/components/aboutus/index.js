@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Container, Typography, Breadcrumbs, Link } from '@mui/material';
-import Banner from './banner';
 import { Helmet } from 'react-helmet';
 
 const AboutUs = () => {
@@ -12,7 +11,7 @@ const AboutUs = () => {
           <meta name="keywords" content="Contact Us PRSTech.io" />
           <meta name="author" content="PRShete Technologies Pvt. Ltd." />
         </Helmet>
-        <Container maxWidth="lg" justifyContent="left" alignItems="left">
+        <Container maxWidth="lg" justifyContent="left" alignItems="left" sx={{mt: 10}}>
             <Breadcrumbs aria-label="breadcrumb">
                 <Link underline="hover" color="inherit" href="/">
                     Home
@@ -21,7 +20,7 @@ const AboutUs = () => {
                 <Typography color="text.primary">About</Typography>
             </Breadcrumbs>
         </Container>
-        <Box sx={{ bgcolor: 'grey.100',  height: { lg: '500px', xs: '650px' }, alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
+        <Box sx={{ bgcolor: 'white',  height: { lg: '500px', xs: '650px' }, alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg">
                 <Typography
                     variant="h1"

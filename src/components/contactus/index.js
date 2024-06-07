@@ -2,7 +2,6 @@ import React from 'react';
 import EmailContactForm from './email_contact_form';
 import { Box, Container, Typography, Breadcrumbs, Link } from '@mui/material';
 import { Helmet } from 'react-helmet';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const ContactUs = () => {
     return (
@@ -13,7 +12,7 @@ const ContactUs = () => {
           <meta name="keywords" content="Contact Us PRSTech.io" />
           <meta name="author" content="PRShete Technologies Pvt. Ltd." />
         </Helmet>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{mt:10}}>
             <Breadcrumbs aria-label="breadcrumb">
                 <Link underline="hover" color="inherit" href="/">
                     Home
@@ -22,7 +21,7 @@ const ContactUs = () => {
                 <Typography color="text.primary">Contact</Typography>
             </Breadcrumbs>
         </Container>
-        <Box sx={{ bgcolor: 'grey.100',  height: '700px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
+        <Box sx={{ bgcolor: 'white',  height: '700px', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
             <Container maxWidth="lg">
                 <Typography
                     variant="h1"
