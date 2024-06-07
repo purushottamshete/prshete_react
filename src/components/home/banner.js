@@ -72,7 +72,7 @@ const Banner = () => {
                                 }}
                             >
                                 <b>Hire your technology team with the top <br/>
-                                Indian Talent.</b> <small style={{color:"gray"}}>Hire remote engineers that provide high quality work as if they were in your office.</small>
+                                Indian Talent.</b> <small style={{color:"gray"}}> Remote engineers that provide high quality work as if they were in your office.</small>
                             </Typography>
                             </Stack>
                         </Grid>
