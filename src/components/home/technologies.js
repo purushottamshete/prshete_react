@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from "@mui/material/Container";
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 import { Box, Grid, Typography, Stack } from '@mui/material';
 import { FaPython } from "react-icons/fa";
 import { DiDjango } from "react-icons/di";
@@ -95,112 +97,257 @@ const Technologies = () => {
                 <Grid container spacing={2} direction="row">
  
                     <Grid item xs={3} lg={1} key={1}>
-                        <FaPython size={60} color="#0093E9"/>
+                        <Tooltip title="Python" placement="top-start">
+                        <IconButton>
+                            <FaPython size={60} color="#0093E9"/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={2}>
-                        <DiDjango size={60}/>
+                        <Tooltip title="Django" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <DiDjango size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
-                    <Grid item xs={3} lg={1} key={3}>
-                        <SiFlask size={60}/>
+                    <Grid item xs={3} lg={1} key={3} >
+                        <Tooltip title="Flask" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiFlask size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={4} >
-                        <SiFastapi size={60}/>
+                        <Tooltip title="FastAPI" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiFastapi size={60}/>
+                        </IconButton>
+                        </Tooltip>
+
                     </Grid>
                     <Grid item xs={3} lg={1} key={5} >
-                        <TbBrandJavascript size={60}/>
+                        <Tooltip title="Javascript" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <TbBrandJavascript size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={6} >
-                        <FaReact size={60}/>
+                        <Tooltip title="React" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaReact size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={7} >
-                        <FaDocker size={60}/>
+                        <Tooltip title="Docker" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaDocker size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={8} >
-                        <SiMysql size={60}/>
+                        <Tooltip title="Mysql" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiMysql size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={9} >
-                        <BiLogoPostgresql size={60}/>
+                        <Tooltip title="Postgres" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <BiLogoPostgresql size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={10} >
-                        <SiMongodb size={60}/>
+                        <Tooltip title="Mongodb" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiMongodb size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={11} >
-                        <SiRos size={60}/>
+                        <Tooltip title="ROS" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiRos size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={12} >
-                        <SiOpencv size={60}/>
+                        <Tooltip title="OpenCV" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiOpencv size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={13} >
-                        <FaAws size={60}/>
+                        <Tooltip title="AWS" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaAws size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={14} >
-                        <SiMicrosoftazure size={60}/>
+                        <Tooltip title="MS Azure" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiMicrosoftazure size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={15} >
-                        <SiGooglecloud size={60}/>
+                        <Tooltip title="GCP" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiGooglecloud size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={16} >
-                        <IoLogoAndroid size={60}/>
+                        <Tooltip title="Android" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <IoLogoAndroid size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={17} >
-                        <FaApple size={60}/>
+                        <Tooltip title="IOS" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaApple size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={18} >
-                        <TbBrandReactNative size={60}/>
+                        <Tooltip title="React Native" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <TbBrandReactNative size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={19} >
-                        <TbBrandCpp size={60}/>
+                        <Tooltip title="C++" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <TbBrandCpp size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={20} >
-                        <FaGithub size={60}/>
+                        <Tooltip title="Github" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaGithub size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={21} >
-                        <SiGithubactions size={60}/>
+                        <Tooltip title="Github Actions" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiGithubactions size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={22} >
-                        <FaJenkins size={60}/>
+                        <Tooltip title="Jenkins" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaJenkins size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={23} >
-                        <SiAnsible size={60}/>
+                        <Tooltip title="Ansible" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiAnsible size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={24} >
-                        <SiKubernetes size={60}/>
+                        <Tooltip title="Kubernetes" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiKubernetes size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={25} >
-                        <SiTensorflow size={60}/>
+                        <Tooltip title="Tensorflow" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiTensorflow size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={26} >
-                        <SiScikitlearn size={60}/>
+                        <Tooltip title="Scikitlearn" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiScikitlearn size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={27} >
-                        <SiPytorch size={60}/>
+                        <Tooltip title="Pytorch" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiPytorch size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={28} >
-                        <SiScipy size={60}/>
+                        <Tooltip title="Scipy" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiScipy size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={29} >
-                        <SiNumpy size={60}/>
+                        <Tooltip title="Numpy" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiNumpy size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={30} >
-                        <SiPandas size={60}/>
+                        <Tooltip title="Pandas" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiPandas size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={31} >
-                        <FaRaspberryPi size={60}/>
+                        <Tooltip title="Raspberry Pi" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <FaRaspberryPi size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={32} >
-                        <SiArduino size={60}/>
+                        <Tooltip title="Arduino" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiArduino size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={33} >
-                        <SiMqtt size={60}/>
+                        <Tooltip title="MQTT" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiMqtt size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={34} >
-                        <GrGraphQl size={60}/>
+                        <Tooltip title="GraphQL" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <GrGraphQl size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={35} >
-                        <DiRedis size={60}/>
+                        <Tooltip title="Redis" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <DiRedis size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     <Grid item xs={3} lg={1} key={36} >
-                        <SiApachekafka size={60}/>
+                        <Tooltip title="Apache Kafka" placement="top-start">
+                        <IconButton  sx={{ color: "black", ":hover": {color: "#0093E9"}}}>
+                            <SiApachekafka size={60}/>
+                        </IconButton>
+                        </Tooltip>
                     </Grid>
                     
                     
