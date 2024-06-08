@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
-import { Button, Avatar } from '@mui/material';
+import { Button, Avatar, Grid, Typography } from '@mui/material';
 import prs from '../../assets/images/prstech.png';
 import { Link } from 'react-router-dom';
 import SwipeableTemporaryDrawer from './drawer';
@@ -15,11 +15,10 @@ function Header() {
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Link to="/"> 
-            <Avatar variant="square" alt="Purushottam Shete" src={prs} sx={{width: 40, height: 40, mr: 1,  display: { xs: 'none', md: 'flex' }}}/>
+            <Avatar variant="square" alt="Purushottam Shete" src={prs} sx={{width: 160, height: 40, mr: 0,  display: { xs: 'none', md: 'flex' }}}/>
           </Link>
-          
           <Link to="/"> 
-          <Avatar variant="square" alt="Purushottam Shete" src={prs} sx={{width: 32, height: 32, mr: 1,  display: { xs: 'flex', md: 'None' }}}/>
+            <Avatar variant="square" alt="Purushottam Shete" src={prs} sx={{width: 120, height: 30, mr: 1,  display: { xs: 'flex', md: 'None' }}}/>
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none',  justifyContent: 'flex-end' } }}>

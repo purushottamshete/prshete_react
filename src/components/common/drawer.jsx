@@ -54,7 +54,7 @@ export default function SwipeableTemporaryDrawer() {
                         <ListItem key={page} disablePadding>
                             <ListItemButton to={pages[page]}>
                             <ListItemIcon>
-                                <ArrowCircleRightIcon /> 
+                                <ArrowCircleRightIcon sx={{ color: "#0093E9" }}/> 
                             </ListItemIcon>
                             <ListItemText primary={page.toUpperCase()} />
                             </ListItemButton>
