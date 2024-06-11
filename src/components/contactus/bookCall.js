@@ -53,7 +53,7 @@ const BookCall = () => {
                         mb: 1,
                         }}
                     >       
-                        Get to know our Eachother, Tech Stack, Team, Terms of Engagement, Selection Process, Pricing, etc. 
+                        Get to know each other, Tech Stack, Team, Terms of Engagement, Selection Process, Pricing, etc. 
                     </Typography>
                     <InlineWidget url="https://calendly.com/prstech"/>
                 </Container>
