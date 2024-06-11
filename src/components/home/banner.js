@@ -1,15 +1,16 @@
 import React from 'react';
 import Container from "@mui/material/Container";
-import { Avatar, Box, Grid, Typography, Stack } from '@mui/material';
+import { Avatar, Box, Grid, Typography, Stack, Button } from '@mui/material';
 import { py } from '../../constants';
 import { FaPython } from "react-icons/fa";
+import SendIcon from '@mui/icons-material/Send';
 
 const Banner = () => {
     return (
         <Box sx={{ bgcolor: 'white',  height: {lg: '600px', xs: '670px'}, alignItems: 'center', justifyContent: 'center', display: 'flex', mt:5}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} >
-                        <Grid item lg={6} sx={{ mt: 5}}>
+                        <Grid item lg={6} sx={{ mt: 2}}>
                             <Stack >     
                             <FaPython size={30} color="#0093E9"/>
                             <Typography
@@ -40,7 +41,7 @@ const Banner = () => {
                                 color: 'black',
                                 textDecoration: 'none',
                                 textShadow: 2,
-                                mb: 10
+                                mb: 8
                                 }}
                             >
                                 SOFTWARE SERVICES
@@ -74,6 +75,7 @@ const Banner = () => {
                                 <b>Hire your technology team with the top <br/>
                                 Indian Talent.</b> <small style={{color:"gray"}}> Remote engineers that provide high quality work as if they were in your office.</small>
                             </Typography>
+                            <Button variant="contained" endIcon={<SendIcon />} href='/bookcall' size='large' sx={{my:1}}>Book call</Button>
                             </Stack>
                         </Grid>
                         <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

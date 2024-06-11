@@ -4,6 +4,7 @@ import Layout from './components/common/layout';
 import AboutUs from './components/aboutus';
 import NoPage from './components/nopage';
 import ContactUs from './components/contactus';
+import BookCall from './components/contactus/bookCall';
 // import Startups from './components/startups';
 // import Services from './components/services';
 // import Learn from './components/learn';
@@ -26,6 +27,7 @@ const App = () => {
             {/* <Route path="learn-python-complete-live" element={<PythonCompleteLive/>} /> */}
             <Route path="about" element={<AboutUs/>} />
             <Route path="contact" element={<ContactUs/>} />
+            <Route path="bookcall" element={<BookCall/>} />
             {/* <Route path="projects" element={<Project/>} /> */}
             <Route path="*" element={<NoPage />} />
           </Route>

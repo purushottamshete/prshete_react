@@ -8,6 +8,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import CheckIcon from '@mui/icons-material/Check';
+import CardActions from '@mui/material/CardActions';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 import { outsourcing, augmentation, consultancy } from '../../constants';
 
 
@@ -62,6 +65,9 @@ const ServiceButton = (props) => {
                 </List>
 
             </CardContent>
+            <CardActions>
+                
+            </CardActions>
 
         </Card>
     );

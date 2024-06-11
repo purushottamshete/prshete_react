@@ -6,7 +6,7 @@ import {Alert} from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";
-
+// Email JS login via gmail id
 const EmailContactForm = () => {
     
     const [alert, setAlert] = useState(false);
