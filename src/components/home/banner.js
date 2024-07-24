@@ -1,33 +1,34 @@
 import React from 'react';
 import Container from "@mui/material/Container";
 import { Avatar, Box, Grid, Typography, Stack, Button } from '@mui/material';
-import { py } from '../../constants';
-import { FaPython } from "react-icons/fa";
+import { robotics } from '../../constants';
+import { GiDeliveryDrone } from "react-icons/gi";
 import SendIcon from '@mui/icons-material/Send';
 
 const Banner = () => {
     return (
-        <Box sx={{ bgcolor: 'white',  height: {lg: '600px', xs: '670px'}, alignItems: 'center', justifyContent: 'center', display: 'flex', mt:5}}>
+        <Box sx={{ bgcolor: 'white',  height: {lg: '600px', xs: '800px'}, alignItems: 'center', justifyContent: 'center', display: 'flex', mt:5}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} >
                         <Grid item lg={6} sx={{ mt: 2}}>
-                            <Stack >     
-                            <FaPython size={30} color="#0093E9"/>
+                            <Stack >  
+                            <br/>
+                            <GiDeliveryDrone size={35} color="#0093E9" />
                             <Typography
                                 variant="h2"
                                 sx={{
                                 fontFamily: 'Montserrat,sans-serif',
                                 fontWeight: 700,
                                 fontSize: {
-                                    lg: 28,
-                                    xs: 20
+                                    lg: 30,
+                                    xs: 22
                                 },
                                 color: 'black',
                                 textDecoration: 'none',
                                 mb:3
                                 }}
                             >
-                                Python Specialised
+                                Software Services for
                             </Typography>
                             <Typography
                                 variant="h2"
@@ -44,7 +45,7 @@ const Banner = () => {
                                 mb: 8
                                 }}
                             >
-                                SOFTWARE SERVICES
+                                Robotics Companies
                                 {/* <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed once, initially
@@ -79,18 +80,19 @@ const Banner = () => {
                             </Stack>
                         </Grid>
                         <Grid item lg={6} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Avatar alt="Python" src={py} 
+                            <Avatar alt="Python" src={robotics} 
                                     sx={{
                                             width: {
                                                 lg: 400,
                                                 xs: 300,
                                             },
                                             height: {
-                                                lg: 400,
-                                                xs: 300,
+                                                lg: 500,
+                                                xs: 400,
                                             },
                                             justifyContent: 'center', 
-                                            alignItems: 'center' }}/>
+                                            alignItems: 'center' }}
+                                            variant="square"/>
                         </Grid>
                 </Grid>
                 

@@ -10,6 +10,7 @@ import py from "../assets/images/sdev.png";
 import outsourcing from "../assets/images/outsourcing.png";
 import augmentation from "../assets/images/augmentation.png";
 import consultancy from "../assets/images/consultancy.png";
+import robotics from "../assets/images/robotics.png";
 
 export {
   puru,
@@ -23,5 +24,6 @@ export {
   py,
   outsourcing,
   augmentation,
-  consultancy
+  consultancy,
+  robotics
 };

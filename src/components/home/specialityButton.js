@@ -7,6 +7,8 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
 import WebIcon from '@mui/icons-material/Web';
+import MemoryIcon from '@mui/icons-material/Memory';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 
 const SpecialityButton = (props) => {
 
@@ -59,9 +61,9 @@ const SpecialityButton = (props) => {
                     }}
                 />
             );
-        } else if (props.icon === 'device'){
+        } else if (props.icon === 'mobile'){
             return (
-                <DevicesIcon 
+                <PhoneIphoneIcon 
                     sx={{
                         fontSize: {
                             lg: 50,
@@ -110,6 +112,22 @@ const SpecialityButton = (props) => {
         } else if (props.icon === 'ai'){
             return (
                 <PsychologyIcon 
+                    sx={{
+                        fontSize: {
+                            lg: 50,
+                            xs: 50
+                        },
+                        color: '#0093E9',
+                        ":hover": {
+                            color: "inherit",
+                        },
+                        mb:2
+                    }}
+                />
+            );
+        } else if (props.icon === 'iot'){
+            return (
+                <MemoryIcon 
                     sx={{
                         fontSize: {
                             lg: 50,
